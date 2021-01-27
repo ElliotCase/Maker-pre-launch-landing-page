@@ -19,16 +19,10 @@ body {
     margin: 0 auto;
 }
 
-.flex {
+@mixin flex-center {
     display: flex;
-
-    &-jc-c {
-        justify-content: center;
-    }
-
-    &-ai-c {
-        align-items: center;
-    }
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
@@ -69,4 +63,7 @@ p {
     p {
         text-align: center;
     }
+}
+.card__scroll {
+    @include flex-center();
 }
