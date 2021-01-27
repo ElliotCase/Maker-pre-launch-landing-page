@@ -31,13 +31,19 @@ h1 {
   color: #ffffff;
 }
 
+h2 {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+  color: white;
+}
+
 p {
   color: #767f98;
   font-style: normal;
   font-weight: 200;
   font-size: 15px;
   line-height: 25px;
-  text-align: center;
 }
 
 .card {
@@ -103,22 +109,21 @@ p {
   left: 451.5px;
   top: 212.81px;
   mix-blend-mode: normal;
-  opacity: 0.25;
-  z-index: 1;
+  z-index: 2;
 }
 
-@media screen and (min-width: 1200px) {
-  .card__scroll::before {
-    content: url("/assets/bg-hero-squiggle.svg");
-    position: absolute;
-    width: 544.31px;
-    height: 377.98px;
-    left: 451.5px;
-    top: 212.81px;
-    mix-blend-mode: normal;
-    opacity: 0.25;
-    z-index: 1;
-  }
+.card__description {
+  margin-bottom: 64px;
+}
+
+.section__card {
+  margin-bottom: 272px;
+}
+
+.perks__box {
+  width: 1110px;
+  height: 383px;
+  margin-bottom: 1000px;
 }
 
 nav {
