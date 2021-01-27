@@ -97,7 +97,25 @@ p {
     position: absolute;
     width: 544.31px;
     height: 377.98px;
-    left: 682.5px;
+    left: 451.5px;
     top: 212.81px;
+
+    mix-blend-mode: normal;
+    opacity: 0.25;
     z-index: 1;
+}
+// left: 691.5px;
+
+@media screen and (min-width: 1200px) {
+    .card__scroll::before {
+        content: url("/assets/bg-hero-squiggle.svg");
+        position: absolute;
+        width: 544.31px;
+        height: 377.98px;
+        left: 451.5px;
+        top: 212.81px;
+        mix-blend-mode: normal;
+        opacity: 0.25;
+        z-index: 1;
+    }
 }
