@@ -147,6 +147,9 @@ p {
     text-align: center;
     // width: 54%;
 }
+.perks__image:nth-child(1) {
+    margin-left: 8px;
+}
 
 .perks__image-background {
     background-color: #093e67;
@@ -185,7 +188,6 @@ p {
     font-weight: 200;
     font-size: 15px;
     line-height: 25px;
-    /* or 167% */
     margin: 0px;
     color: #777f98;
     text-align: left;
