@@ -33,6 +33,13 @@ h1 {
 
 h2 {
   font-weight: 800;
+  font-size: 32px;
+  line-height: 44px;
+  color: white;
+}
+
+h3 {
+  font-weight: 800;
   font-size: 18px;
   line-height: 25px;
   color: white;
@@ -123,7 +130,6 @@ p {
 .perks__box {
   width: 1110px;
   height: 383px;
-  margin-bottom: 1000px;
 }
 
 .flex-row {
@@ -194,6 +200,45 @@ p {
   margin: 0px;
   color: #777f98;
   text-align: left;
+}
+
+.perks {
+  margin-bottom: 202px;
+}
+
+.pricing__textbox {
+  margin: 0 auto;
+  text-align: center;
+  width: 540px;
+  height: 118px;
+  margin-bottom: 72px;
+}
+
+.pricing__card-div {
+  width: 920px;
+  height: 482px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.pricing__card-dark {
+  height: 425px;
+  width: 445px;
+  left: 0px;
+  top: 23px;
+  border-radius: 8px;
+  background: #093e67;
+  margin-top: 44px;
+  margin-right: 15px;
+}
+
+.pricing__card-light {
+  width: 445px;
+  height: 449px;
+  border-top-left-radius: 8px;
+  background: #3eeae7;
+  margin-top: 32px;
+  margin-left: 15px;
 }
 
 nav {
