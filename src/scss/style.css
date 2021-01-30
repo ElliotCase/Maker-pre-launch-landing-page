@@ -267,41 +267,67 @@ p {
   color: #3ee9e5;
 }
 
-.pricing__card-textbox {
+.pricing__card-textbox, .pricing__card-textbox-dark {
   width: 369px;
   margin-left: 38px;
   margin-top: 49px;
 }
 
-.pricing__card-textbox h3 {
+.pricing__card-textbox h3, .pricing__card-textbox-dark h3 {
   font-weight: 800;
   font-size: 18px;
   line-height: 25px;
   margin-bottom: 19px;
 }
 
-.pricing__card-textbox p {
+.pricing__card-textbox p, .pricing__card-textbox-dark p {
   margin-bottom: 24px;
+  mix-blend-mode: normal;
+  opacity: 0.6;
 }
 
-.pricing__card-textbox h2 {
+.pricing__card-textbox h2, .pricing__card-textbox-dark h2 {
   font-weight: 800;
   font-size: 40px;
   line-height: 55px;
   margin-bottom: 19px;
 }
 
-.pricing__card-textbox ul {
+.pricing__card-textbox ul, .pricing__card-textbox-dark ul {
   list-style-type: none;
   padding: none;
 }
 
-.pricing__card-textbox ul img {
+.pricing__card-textbox ul img, .pricing__card-textbox-dark ul img {
   margin-right: 15.32px;
 }
 
-.pricing__card-textbox ul li {
+.pricing__card-textbox ul li, .pricing__card-textbox-dark ul li {
   color: #fff;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 12px;
+}
+
+.pricing__card-textbox-dark {
+  margin-top: 61px;
+}
+
+.pricing__card-textbox-dark h3 {
+  color: #080c21;
+}
+
+.pricing__card-textbox-dark p {
+  color: #080c21;
+}
+
+.pricing__card-textbox-dark h2 {
+  color: #080c21;
+}
+
+.pricing__card-textbox-dark ul li {
+  color: #080c21;
   font-weight: 200;
   font-size: 15px;
   line-height: 25px;

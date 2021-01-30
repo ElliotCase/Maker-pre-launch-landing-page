@@ -274,6 +274,8 @@ p {
     }
     p {
         margin-bottom: 24px;
+        mix-blend-mode: normal;
+        opacity: 0.6;
     }
     h2 {
         font-weight: map-get($font-weights, bold);
@@ -289,6 +291,29 @@ p {
         }
         li {
             color: #fff;
+            font-weight: 200;
+            font-size: 15px;
+            line-height: 25px;
+            margin-bottom: 12px;
+        }
+    }
+}
+
+.pricing__card-textbox-dark {
+    @extend .pricing__card-textbox;
+    margin-top: 61px;
+    h3 {
+        color: $black;
+    }
+    p {
+        color: $black;
+    }
+    h2 {
+        color: $black;
+    }
+    ul {
+        li {
+            color: $black;
             font-weight: 200;
             font-size: 15px;
             line-height: 25px;
