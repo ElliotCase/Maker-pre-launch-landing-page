@@ -376,15 +376,28 @@ p {
   padding-left: 24px;
 }
 
+.footer-div #contact-form ::placeholder {
+  font-weight: 800;
+  font-family: Manrope;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 25px;
+  /* identical to box height, or 167% */
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+}
+
 .footer-div #contact-form button {
   margin-left: 16px;
+  color: #093f68;
   background: #3ee9e5;
   border-radius: 24px;
   width: 140px;
   height: 48px;
   outline: none;
   border: none;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 25px;
   font-weight: 800;
   font-family: Manrope;
