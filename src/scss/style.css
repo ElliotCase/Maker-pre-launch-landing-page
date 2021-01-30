@@ -6,6 +6,8 @@ html {
 
 * {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -232,6 +234,26 @@ p {
   margin-right: 15px;
 }
 
+.pricing__card-dark::before {
+  content: "";
+  position: absolute;
+  width: 45.62px;
+  height: 45.45px;
+  left: 298px;
+  top: 1688px;
+  background: url(/assets/icon-free.svg);
+}
+
+.pricing__card-light::before {
+  content: "";
+  position: absolute;
+  width: 51px;
+  height: 65px;
+  left: 772px;
+  top: 1666px;
+  background: url(/assets/icon-paid.svg);
+}
+
 .pricing__card-light {
   width: 445px;
   height: 449px;
@@ -239,6 +261,51 @@ p {
   background: #3eeae7;
   margin-top: 32px;
   margin-left: 15px;
+}
+
+.check {
+  color: #3ee9e5;
+}
+
+.pricing__card-textbox {
+  width: 369px;
+  margin-left: 38px;
+  margin-top: 49px;
+}
+
+.pricing__card-textbox h3 {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 19px;
+}
+
+.pricing__card-textbox p {
+  margin-bottom: 24px;
+}
+
+.pricing__card-textbox h2 {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 55px;
+  margin-bottom: 19px;
+}
+
+.pricing__card-textbox ul {
+  list-style-type: none;
+  padding: none;
+}
+
+.pricing__card-textbox ul img {
+  margin-right: 15.32px;
+}
+
+.pricing__card-textbox ul li {
+  color: #fff;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 12px;
 }
 
 nav {
