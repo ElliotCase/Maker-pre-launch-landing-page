@@ -257,7 +257,7 @@ p {
 .pricing__card-light {
   width: 445px;
   height: 449px;
-  border-top-left-radius: 8px;
+  border-radius: 8px;
   background: #3eeae7;
   margin-top: 32px;
   margin-left: 15px;
@@ -324,6 +324,14 @@ p {
 
 .pricing__card-textbox-dark h2 {
   color: #080c21;
+}
+
+.pricing__card-textbox-dark h2 span {
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.6;
+  vertical-align: middle;
 }
 
 .pricing__card-textbox-dark ul li {

@@ -252,7 +252,7 @@ p {
 .pricing__card-light {
     width: 445px;
     height: 449px;
-    border-top-left-radius: 8px;
+    border-radius: 8px;
     background: $cyan;
     margin-top: 32px;
     margin-left: 15px;
@@ -310,6 +310,13 @@ p {
     }
     h2 {
         color: $black;
+        span {
+            font-weight: 200;
+            font-size: 15px;
+            line-height: 25px;
+            opacity: 0.6;
+            vertical-align: middle;
+        }
     }
     ul {
         li {
