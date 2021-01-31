@@ -404,6 +404,16 @@ p {
   font-style: normal;
 }
 
+.footer-div::before {
+  content: "";
+  position: absolute;
+  width: 1664.13px;
+  height: 228px;
+  left: -223.7px;
+  top: 2299px;
+  background: url(/assets/bg-footer-squiggle.svg);
+}
+
 nav {
   padding-top: 81px;
   padding-bottom: 180.6px;
