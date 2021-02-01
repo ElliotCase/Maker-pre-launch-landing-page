@@ -262,7 +262,7 @@ p {
   width: 51px;
   height: 65px;
   position: absolute;
-  top: -95px;
+  top: -93px;
 }
 
 // .pricing__card-light::before {
@@ -338,12 +338,15 @@ p {
   }
   h2 {
     color: $black;
+    position: relative;
     span {
       font-weight: 200;
       font-size: 15px;
       line-height: 25px;
       opacity: 0.6;
-      vertical-align: middle;
+      position: absolute;
+      top: 12px;
+      padding-left: 8px;
     }
   }
   ul {

@@ -258,7 +258,7 @@ p {
   width: 51px;
   height: 65px;
   position: absolute;
-  top: -95px;
+  top: -93px;
 }
 
 .pricing__card-light {
@@ -332,6 +332,7 @@ p {
 
 .pricing__card-textbox-dark h2 {
   color: #080c21;
+  position: relative;
 }
 
 .pricing__card-textbox-dark h2 span {
@@ -339,7 +340,9 @@ p {
   font-size: 15px;
   line-height: 25px;
   opacity: 0.6;
-  vertical-align: middle;
+  position: absolute;
+  top: 12px;
+  padding-left: 8px;
 }
 
 .pricing__card-textbox-dark ul li {
