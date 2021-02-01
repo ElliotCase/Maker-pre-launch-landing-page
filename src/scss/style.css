@@ -379,6 +379,7 @@ p {
   border-radius: 24px;
   outline: none;
   border: none;
+  padding-left: 18px;
 }
 
 .footer-div button {
@@ -403,6 +404,7 @@ p {
   height: 228px;
   left: -223.7px;
   bottom: -40px;
+  pointer-events: none;
 }
 
 ::placeholder {
@@ -411,14 +413,13 @@ p {
   font-style: normal;
   font-size: 15px;
   line-height: 25px;
-  padding-left: 50px;
   color: #ffffff;
   mix-blend-mode: normal;
   opacity: 0.4;
 }
 
 .footer-div {
-  margin-bottom: 117px;
+  margin-bottom: 150px;
 }
 
 nav {
