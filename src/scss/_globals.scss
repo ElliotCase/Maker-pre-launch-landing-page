@@ -253,7 +253,7 @@ p {
   width: 45.62px;
   height: 45.45px;
   position: absolute;
-  top: -72px;
+  top: -71px;
 }
 .realative {
   position: relative;
@@ -262,7 +262,7 @@ p {
   width: 51px;
   height: 65px;
   position: absolute;
-  top: -93px;
+  top: -92px;
 }
 
 // .pricing__card-light::before {
@@ -345,7 +345,7 @@ p {
       line-height: 25px;
       opacity: 0.6;
       position: absolute;
-      top: 12px;
+      top: 15px;
       padding-left: 8px;
     }
   }
@@ -383,7 +383,6 @@ p {
       border-radius: 24px;
       outline: none;
       border: none;
-      padding-left: 24px;
     }
     ::placeholder {
       font-weight: map-get($font-weights, bold);
@@ -392,6 +391,7 @@ p {
       font-size: 15px;
       line-height: 25px;
       /* identical to box height, or 167% */
+      padding-left: 24px;
 
       color: #ffffff;
 
@@ -416,13 +416,10 @@ p {
   }
 }
 
-.footer-div::before {
-  content: "";
+.footer__image {
   position: absolute;
-
   width: 1664.13px;
   height: 228px;
-  left: -223.7px;
-  top: 2299px;
-  background: url(/assets/bg-footer-squiggle.svg);
+  right: -126px;
+  bottom: -40px;
 }
