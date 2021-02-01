@@ -66,6 +66,8 @@ p {
   flex-direction: column;
 }
 .card__textbox {
+  z-index: 2;
+
   width: 730px;
   height: 318px;
   h1 {
@@ -106,19 +108,29 @@ p {
   background: url(/assets/illustration-hero-right.svg);
 }
 
-.card__scroll::before {
-  content: url("/assets/bg-hero-squiggle.svg");
+.card__image {
   position: absolute;
+  z-index: 1;
   width: 544.31px;
   height: 377.98px;
-  left: 451.5px;
-  top: 212.81px;
-  mix-blend-mode: normal;
-  z-index: 2;
+  top: -88px;
+  left: 92px;
 }
+
+// .card__scroll::before {
+//   content: url("/assets/bg-hero-squiggle.svg");
+//   position: absolute;
+//   width: 544.31px;
+//   height: 377.98px;
+//   left: 451.5px;
+//   top: 212.81px;
+//   mix-blend-mode: normal;
+//   z-index: 2;
+// }
 
 .card__description {
   margin-bottom: 64px;
+  z-index: 2;
 }
 
 .section__card {
@@ -234,15 +246,6 @@ p {
   margin-right: 15px;
 }
 
-// .pricing__card-dark::before {
-//     content: "";
-//     position: absolute;
-//     width: 45.62px;
-//     height: 45.45px;
-//
-//     background: url(/assets/icon-free.svg);
-// }
-
 .work {
   position: relative;
 }
@@ -250,16 +253,16 @@ p {
   width: 45.62px;
   height: 45.45px;
   position: absolute;
-  top: -70px;
+  top: -72px;
 }
-.work-2 {
+.realative {
   position: relative;
 }
 .pricing__image-paid {
-  width: 45.62px;
-  height: 45.45px;
+  width: 51px;
+  height: 65px;
   position: absolute;
-  top: -85px;
+  top: -95px;
 }
 
 // .pricing__card-light::before {
