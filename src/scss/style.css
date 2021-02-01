@@ -259,6 +259,7 @@ p {
   height: 65px;
   position: absolute;
   top: -94px;
+  left: -1px;
 }
 
 .pricing__card-light {
@@ -354,7 +355,7 @@ p {
 }
 
 .footer-div {
-  width: 730px;
+  width: 1440px;
   height: 134px;
   margin: 0 auto;
   text-align: center;
@@ -380,20 +381,7 @@ p {
   border: none;
 }
 
-.footer-div #contact-form ::placeholder {
-  font-weight: 800;
-  font-family: Manrope;
-  font-style: normal;
-  font-size: 15px;
-  line-height: 25px;
-  /* identical to box height, or 167% */
-  padding-left: 24px;
-  color: #ffffff;
-  mix-blend-mode: normal;
-  opacity: 0.4;
-}
-
-.footer-div #contact-form button {
+.footer-div button {
   margin-left: 16px;
   color: #093f68;
   background: #3ee9e5;
@@ -413,8 +401,24 @@ p {
   position: absolute;
   width: 1664.13px;
   height: 228px;
-  right: -358px;
+  left: -223.7px;
   bottom: -40px;
+}
+
+::placeholder {
+  font-weight: 800;
+  font-family: Manrope;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 25px;
+  padding-left: 50px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+}
+
+.footer-div {
+  margin-bottom: 117px;
 }
 
 nav {
