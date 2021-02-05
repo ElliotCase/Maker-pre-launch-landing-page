@@ -63,7 +63,6 @@ p {
 }
 
 .card__textbox {
-  z-index: 2;
   width: 730px;
   height: 318px;
 }
@@ -111,18 +110,19 @@ p {
   background: url(/assets/illustration-hero-right.svg);
 }
 
-.card__image {
+.card__scroll::before {
+  content: url("/assets/bg-hero-squiggle.svg");
   position: absolute;
-  z-index: 1;
   width: 544.31px;
   height: 377.98px;
-  top: -88px;
-  left: 95px;
+  left: 451.5px;
+  top: 212.81px;
+  mix-blend-mode: normal;
+  z-index: 2;
 }
 
 .card__description {
   margin-bottom: 64px;
-  z-index: 2;
 }
 
 .section__card {
@@ -239,27 +239,24 @@ p {
   margin-right: 15px;
 }
 
-.work {
-  position: relative;
-}
-
-.pricing__image-free {
+.pricing__card-dark::before {
+  content: "";
+  position: absolute;
   width: 45.62px;
   height: 45.45px;
+  left: 298px;
+  top: 1688px;
+  background: url(/assets/icon-free.svg);
+}
+
+.pricing__card-light::before {
+  content: "";
   position: absolute;
-  top: -71px;
-}
-
-.realative {
-  position: relative;
-}
-
-.pricing__image-paid {
   width: 51px;
   height: 65px;
-  position: absolute;
-  top: -94px;
-  left: -1px;
+  left: 772px;
+  top: 1666px;
+  background: url(/assets/icon-paid.svg);
 }
 
 .pricing__card-light {
@@ -333,7 +330,6 @@ p {
 
 .pricing__card-textbox-dark h2 {
   color: #080c21;
-  position: relative;
 }
 
 .pricing__card-textbox-dark h2 span {
@@ -341,9 +337,7 @@ p {
   font-size: 15px;
   line-height: 25px;
   opacity: 0.6;
-  position: absolute;
-  top: 15px;
-  padding-left: 8px;
+  vertical-align: middle;
 }
 
 .pricing__card-textbox-dark ul li {
@@ -355,7 +349,7 @@ p {
 }
 
 .footer-div {
-  width: 1440px;
+  width: 730px;
   height: 134px;
   margin: 0 auto;
   text-align: center;
@@ -379,11 +373,22 @@ p {
   border-radius: 24px;
   outline: none;
   border: none;
-  padding-left: 18px;
-  padding-top: 12px;
+  padding-left: 24px;
 }
 
-.footer-div button {
+.footer-div #contact-form ::placeholder {
+  font-weight: 800;
+  font-family: Manrope;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 25px;
+  /* identical to box height, or 167% */
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+}
+
+.footer-div #contact-form button {
   margin-left: 16px;
   color: #093f68;
   background: #3ee9e5;
@@ -399,28 +404,14 @@ p {
   font-style: normal;
 }
 
-.footer__image {
+.footer-div::before {
+  content: "";
   position: absolute;
   width: 1664.13px;
   height: 228px;
   left: -223.7px;
-  bottom: -42px;
-  pointer-events: none;
-}
-
-::placeholder {
-  font-weight: 800;
-  font-family: Manrope;
-  font-style: normal;
-  font-size: 15px;
-  line-height: 25px;
-  color: #ffffff;
-  mix-blend-mode: normal;
-  opacity: 0.4;
-}
-
-.footer-div {
-  margin-bottom: 157px;
+  top: 2299px;
+  background: url(/assets/bg-footer-squiggle.svg);
 }
 
 nav {
