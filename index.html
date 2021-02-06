@@ -14,7 +14,7 @@
 <body>
   <div class="container">
     <nav>
-      <div class="logo ">
+      <div class="logo">
         <a href="/index.html">
           <img src="/assets/logo.svg" alt="logo">
         </a>
@@ -34,8 +34,8 @@
           <div class="realative">
             <img src="/assets/illustration-hero-right.svg" class="illustration__image-right" alt="">
           </div>
-          <h1 class="card__title">Get paid for the work<br>
-            you <span>love</span> to do.</h1>
+          <h1 class="card__title">Get paid for the<br class="mobile-br"> work<br>
+            you <span>love<br class="mobile-br"></span> to do.</h1>
           <p class="card__description">The 9-5 grind is so last century. We believe in living life on your own
             terms.<br>
             Whether you’re looking to escape the rat race or set up a side hustle, we’ve <br>got you covered.
@@ -48,7 +48,7 @@
 
   <section class="perks">
     <div class="container">
-      <div class="perks__box flex-row">
+      <div class="perks__box flex-row flex-column-tablet">
 
         <div class="perks__card">
           <div class="perks__image-background">
@@ -75,13 +75,13 @@
           </div>
         </div>
 
-        <div class="perks__card">
+        <div class="perks__card perks__card-mobile">
           <div class="perks__image-background">
             <img src="/assets/illustration-lifestyle.svg" alt="" class="perks__image">
           </div>
           <div class="perks__textbox">
 
-            <h3 class="perks__title"> Choose your lifestyle</h3>
+            <h3 class="perks__title "> Choose your lifestyle</h3>
             <p class="perks__description"> Own your daily schedule. Fancy a<br> lie-in? Go for it! Take charge of
               your
               week.</p>
@@ -119,7 +119,8 @@
               <img src="/assets/icon-free.svg" class="pricing__image-free" alt="">
             </div>
             <h3>Dip your toe</h3>
-            <p> Just getting started? No problem at all! Our free plan will take you a long way.
+            <p> Just getting started? No problem at<br class="mobile-br"> all! Our free plan will take you a long<br
+                class="mobile-br"> way.
             </p>
             <h2>Free</h2>
             <ul class="pricing__list-free">
@@ -138,7 +139,9 @@
             </div>
             <h3>Dive right in
             </h3>
-            <p>Ready for the big time? Our paid plan will help you take your business to the next level.
+            <p>Ready for the big time? Our paid plan<br class="mobile-br"> will help you take your business to the<br
+                class="mobile-br"> next
+              level.
 
             </p>
             <h2>$25.00 <span>/ month</span>
@@ -157,29 +160,31 @@
   </section>
 
   <section class="footer">
-    <div class="footer-div">
-      <h2> Get notified when we launch</h2>
-      <form id="contact-form">
-        <div class="form-item">
-          <label for="email"></label>
-          <input type="email" id="email" class="email" placeholder="Email address
+    <div class="container">
+      <div class="footer-div">
+        <h2> Get notified when we launch</h2>
+        <form id="contact-form">
+          <div class="form-item">
+            <label for="email"></label>
+            <input type="email" id="email" class="email" placeholder="Email address
           ">
-          <!-- <p class="italic">Email invalid</p> -->
+            <!-- <p class="italic">Email invalid</p> -->
+          </div>
+
+
+          <button id="submit" type="submit" form="contact-form">Get notified
+          </button>
+
+        </form>
+
+        <div class="realative">
+          <img src="/assets/bg-footer-squiggle.svg" class="footer__image" alt="">
+        </div>
+        <div class="realative">>
+          <p class="error">Oops! That doesn’t look like an email address</p>
         </div>
 
-
-        <button id="submit" type="submit" form="contact-form">Get notified
-        </button>
-
-      </form>
-
-      <div class="realative">
-        <img src="/assets/bg-footer-squiggle.svg" class="footer__image" alt="">
       </div>
-      <div class="realative">>
-        <p class="error">Oops! That doesn’t look like an email address</p>
-      </div>
-
     </div>
   </section>
 
