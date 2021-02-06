@@ -629,4 +629,19 @@ p {
   .pricing__card-div {
     width: 327px;
   }
+  .footer-div {
+    #contact-form {
+      flex-direction: column;
+    }
+    button {
+      width: 320px;
+      height: 48px;
+      margin-left: 0px;
+      margin-top: 24px;
+    }
+  }
+  .error{
+    margin: 0px;
+    margin-top: 11px;
+  }
 }
