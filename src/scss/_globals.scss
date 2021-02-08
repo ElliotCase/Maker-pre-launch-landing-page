@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Manrope", sans-serif;
-  background-color: #080c20;
+  background-color: $black;
   overflow-x: hidden;
 }
 
@@ -32,22 +32,22 @@ h1 {
   color: $white;
   font-weight: map-get($font-weights, bold);
   font-style: normal;
-  font-size: 48px;
+  font-size: $font-xlg;
   line-height: 56px;
   text-align: center;
 
-  color: #ffffff;
+  color: $white;
 }
 h2 {
   font-weight: map-get($font-weights, bold);
-  font-size: 32px;
+  font-size: $font-med;
   line-height: 44px;
   color: $white;
 }
 
 h3 {
   font-weight: map-get($font-weights, bold);
-  font-size: 18px;
+  font-size: $font-sm;
   line-height: 25px;
   color: $white;
 }
@@ -59,304 +59,8 @@ p {
   font-size: 15px;
   line-height: 25px;
 }
-.card {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-.card__textbox {
-  z-index: 2;
-
-  width: 730px;
-  height: 318px;
-  h1 {
-    margin-bottom: 24px;
-    margin-top: 0px;
-    z-index: 22;
-  }
-  span {
-    color: $cyan;
-  }
-  p {
-    text-align: center;
-  }
-}
-.card__scroll {
-  @include flex-center();
-  z-index: 1;
-}
-
-.illustration__image-left {
-  position: absolute;
-  width: 407.41px;
-  height: 458.5px;
-  left: -408px;
-  top: -72px;
-}
-
-.illustration__image-right {
-  position: absolute;
-  width: 395.5px;
-  height: 443.5px;
-  right: -414px;
-  top: -64px;
-}
-
-.card__image {
-  position: absolute;
-  z-index: 1;
-  width: 544.31px;
-  height: 377.98px;
-  top: -88px;
-  left: 95px;
-}
-
-// .card__scroll::before {
-//   content: url("/assets/bg-hero-squiggle.svg");
-//   position: absolute;
-//   width: 544.31px;
-//   height: 377.98px;
-//   left: 451.5px;
-//   top: 212.81px;
-//   mix-blend-mode: normal;
-//   z-index: 2;
-// }
-
-.card__description {
-  margin-bottom: 64px;
-  z-index: 2;
-}
-
-.section__card {
-  margin-bottom: 272px;
-}
-
-.perks__box {
-  width: 1110px;
-  height: 383px;
-}
-
-.flex-row {
-  display: flex;
-  flex-direction: row;
-}
-
-.perks__card {
-  width: 255px;
-  height: 335px;
-}
-
-.perks__card:nth-child(even) {
-  margin-top: 48px;
-  margin-right: 30px;
-  margin-left: 30px;
-}
-
-.perks__image {
-  font-family: Manrope, sans-serif;
-  font-size: 10px;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  // width: 54%;
-}
-.margin-left-8px {
-  margin-left: 8px;
-}
-
-.perks__image-background {
-  background-color: #093e67;
-  box-sizing: border-box;
-  color: #fff;
-  display: flex;
-  font-family: Manrope, sans-serif;
-  font-size: 10px;
-  justify-content: center;
-  min-height: 124px;
-  text-align: center;
-  width: 120px;
-  width: 160px;
-  height: 164px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #093f68;
-  border-radius: 45px;
-}
-
-.perks__textbox {
-  height: 123px;
-  margin-top: 48px;
-  width: 255px;
-  height: 123px;
-}
-
-.perks__title {
-  margin-bottom: 23px;
-}
-
-.perks__description {
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 15px;
-  line-height: 25px;
-  margin: 0px;
-  color: #777f98;
-  text-align: left;
-}
-
-.perks {
-  margin-bottom: 202px;
-}
-
-.pricing__textbox {
-  margin: 0 auto;
-  text-align: center;
-  width: 540px;
-  height: 118px;
-  margin-bottom: 72px;
-  h2 {
-    margin-bottom: 24px;
-  }
-}
-
-.pricing__card-div {
-  width: 920px;
-  height: 482px;
-  display: flex;
-  margin: 0 auto;
-  margin-bottom: 202px;
-}
-
-.pricing__card-dark {
-  height: 425px;
-  width: 445px;
-  left: 0px;
-  top: 23px;
-  border-radius: 8px;
-  background: $blue;
-  margin-top: 44px;
-  margin-right: 15px;
-}
-
-.work {
-  position: relative;
-}
-.pricing__image-free {
-  width: 45.62px;
-  height: 45.45px;
-  position: absolute;
-  top: -71px;
-}
 .realative {
   position: relative;
-}
-.pricing__image-paid {
-  width: 51px;
-  height: 65px;
-  position: absolute;
-  top: -94px;
-  left: -1px;
-}
-
-// .pricing__card-light::before {
-//   content: "";
-//   position: absolute;
-//   width: 51px;
-//   height: 65px;
-//   left: 772px;
-//   top: 1666px;
-//   background: url(/assets/icon-paid.svg);
-// }
-
-.pricing__card-light {
-  width: 445px;
-  height: 449px;
-  border-radius: 8px;
-  background: $cyan;
-  margin-top: 32px;
-  margin-left: 15px;
-}
-
-.check {
-  color: #3ee9e5;
-}
-
-.pricing__card-textbox {
-  width: 369px;
-  margin-left: 38px;
-  margin-top: 49px;
-  h3 {
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 25px;
-    margin-bottom: 19px;
-  }
-  p {
-    margin-bottom: 24px;
-    mix-blend-mode: normal;
-    opacity: 0.6;
-    color: $white;
-  }
-  h2 {
-    font-weight: map-get($font-weights, bold);
-    font-size: $font-lg;
-    line-height: 55px;
-    margin-bottom: 19px;
-  }
-  ul {
-    list-style-type: none;
-    padding: none;
-    img {
-      margin-right: 15.32px;
-    }
-    li {
-      color: #fff;
-      font-weight: 200;
-      font-size: 15px;
-      line-height: 25px;
-      margin-bottom: 12px;
-    }
-  }
-}
-.mobile-br {
-  display: none;
-}
-
-.pricing__card-textbox-dark {
-  @extend .pricing__card-textbox;
-  margin-top: 61px;
-
-  h3 {
-    color: $black;
-  }
-  p {
-    color: $black;
-  }
-  h2 {
-    color: $black;
-    position: relative;
-    span {
-      font-weight: 200;
-      font-size: 15px;
-      line-height: 25px;
-      opacity: 0.6;
-      position: absolute;
-      top: 15px;
-      padding-left: 8px;
-    }
-  }
-  ul {
-    li {
-      color: $black;
-      font-weight: 200;
-      font-size: 15px;
-      line-height: 25px;
-      margin-bottom: 12px;
-    }
-  }
 }
 
 .footer-div {
@@ -367,12 +71,12 @@ p {
   h2 {
     margin-bottom: 42px;
   }
-  #contact-form {
+  .contact-form {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    #email {
+    .email {
       width: 320px;
       height: 48px;
       background: #093f68;
@@ -391,7 +95,7 @@ p {
     height: 48px;
     outline: none;
     border: none;
-    font-size: 15px;
+    font-size: $font-xsm;
     line-height: 25px;
     font-weight: map-get($font-weights, bold);
     font-family: Manrope;
@@ -413,7 +117,7 @@ p {
   font-weight: map-get($font-weights, bold);
   font-family: Manrope;
   font-style: normal;
-  font-size: 15px;
+  font-size: $font-xsm;
   line-height: 25px;
   color: #ffffff;
   mix-blend-mode: normal;
@@ -428,7 +132,7 @@ p {
   font-weight: 200;
   font-size: 12px;
   line-height: 25px;
-  color: #ff2965;
+  color: $red;
   margin-right: 190px;
   margin-top: 6px;
   display: none;
@@ -436,212 +140,13 @@ p {
 
 .email {
   border: none;
-}
-.email-error {
-  border: 2px solid #ff2965;
+  &error {
+    border: 2px solid $red;
+  }
 }
 
-#submit:hover {
-  background-color: #080c20;
+.submit:hover {
+  background-color: $black;
   border: 2px solid $cyan;
   color: $white;
-}
-
-@media screen and (max-width: 1200px) {
-  .container {
-    width: 573px;
-  }
-  .perks__box {
-    width: 573px;
-    height: 614px;
-    margin-bottom: 141px;
-  }
-  .flex-column-tablet {
-    flex-direction: column;
-  }
-  .perks__card {
-    width: 515px;
-    height: 124px;
-    display: flex;
-    margin-bottom: 40px;
-  }
-  .perks__card:nth-child(even) {
-    margin-bottom: 40px;
-    margin-top: 0px;
-    margin-left: 0px;
-  }
-  .perks__image-background {
-    width: 120px;
-    height: 124px;
-  }
-  .perks__textbox {
-    margin: 0px;
-    margin-top: 19px;
-    margin-left: 55px;
-    width: 340px;
-    height: 86px;
-    br {
-      display: none;
-    }
-    .perks__title {
-      margin-bottom: 11px;
-    }
-  }
-  .perks__card-mobile {
-    margin-left: 58px;
-  }
-  .card__textbox {
-    width: 457px;
-    height: 254px;
-    h1 {
-      font-size: 32px;
-      line-height: 40px;
-      margin-bottom: 24px;
-      margin-top: 0px;
-      z-index: 22;
-    }
-    span {
-      color: $cyan;
-    }
-    br {
-      display: none;
-    }
-    p {
-      text-align: center;
-      font-size: 15px;
-      line-height: 25px;
-    }
-  }
-  .card__image {
-    left: 0px;
-  }
-  .pricing__card-div {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 75px;
-    height: 1172px;
-    width: 573px;
-    align-items: center;
-  }
-  .pricing__card-dark {
-    margin-bottom: 76px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .container {
-    width: 327px;
-  }
-  .illustration__image-left {
-    position: absolute;
-    width: 186px;
-    height: 229.6px;
-    left: 0px;
-    top: -350px;
-  }
-
-  .illustration__image-right {
-    position: absolute;
-    width: 188.45px;
-    height: 230.25px;
-    right: -50px;
-    top: -350px;
-  }
-  .card__textbox {
-    width: 327px;
-  }
-  .card__image {
-    display: none;
-  }
-  .logo {
-    display: flex;
-    justify-content: center;
-  }
-  .card__title {
-    br {
-      display: none;
-    }
-    .mobile-br {
-      display: block;
-    }
-  }
-  .mobile-br {
-    display: block;
-  }
-  .section__card {
-    margin-bottom: 240px;
-  }
-  .perks__card {
-    display: inline;
-  }
-  .flex-column-tablet {
-    justify-content: center;
-    align-items: center;
-  }
-  .perks__box {
-    width: 327px;
-    height: 1134px;
-  }
-  .perks__card {
-    width: 327px;
-    height: 242px;
-    margin-bottom: 56px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .perks__card:nth-child(even) {
-    margin: 0px;
-    padding: 0px;
-    margin-bottom: 56px;
-  }
-  .perks__card-mobile {
-    margin: 0px;
-    margin-bottom: 56px;
-  }
-  .perks__textbox {
-    padding: 0;
-    margin: 0;
-    width: 327px;
-    height: 86px;
-    .perks__title {
-      margin-top: 32px;
-    }
-    .perks__description {
-      text-align: center;
-    }
-  }
-  .perks__image-background {
-    margin-top: 56px;
-  }
-  .pricing__textbox {
-    width: 327px;
-  }
-  .pricing__card-dark {
-    width: 327px;
-    height: 459px;
-  }
-  .pricing__card-light {
-    width: 327px;
-    height: 448px;
-  }
-  .pricing__card-div {
-    width: 327px;
-  }
-  .footer-div {
-    #contact-form {
-      flex-direction: column;
-    }
-    button {
-      width: 320px;
-      height: 48px;
-      margin-left: 0px;
-      margin-top: 24px;
-    }
-  }
-  .error{
-    margin: 0px;
-    margin-top: 11px;
-  }
 }

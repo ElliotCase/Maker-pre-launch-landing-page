@@ -10,11 +10,12 @@ form.addEventListener("submit", function (e) {
     if (email.match(emailRegex)) {
         emailInput.classList.remove("email-error");
         error.style.display = "none";
+        emailInput.value = "";
+
         return true;
     } else {
         emailInput.classList.add("email-error");
         error.style.display = "block";
-        emailInput.value = "";
         return false;
     }
 });
