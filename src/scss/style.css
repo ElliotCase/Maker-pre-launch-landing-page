@@ -389,7 +389,7 @@ nav {
   position: absolute;
   width: 1664.13px;
   height: 228px;
-  left: -403.7px;
+  left: -388.7px;
   bottom: -42px;
   pointer-events: none;
 }
@@ -407,6 +407,10 @@ nav {
 
 .footer-div {
   margin-bottom: 157px;
+}
+
+.footer-div h2 {
+  margin-top: 1px;
 }
 
 .error {
