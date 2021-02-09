@@ -82,12 +82,16 @@
         width: 573px;
         align-items: center;
     }
+    .pricing {
+        margin-top: 374px;
+    }
     .pricing__card-dark {
         margin-bottom: 76px;
     }
     .footer__image {
         width: 1664.13px;
         height: 228px;
+        overflow-x: hidden;
     }
 }
 
@@ -143,20 +147,19 @@
         top: -350px;
         overflow: hidden;
     }
-
-    .perks__card {
-        display: inline;
-    }
-    .flex-column-tablet {
-        justify-content: center;
-        align-items: center;
+    .perks__box,
+    .perks__card,
+    .perks__textbox,
+    .pricing__card-dark,
+    .pricing__card-light,
+    .pricing__card-div,
+    .pricing__textbox {
+        width: 327px;
     }
     .perks__box {
-        width: 327px;
         height: 1134px;
     }
     .perks__card {
-        width: 327px;
         height: 242px;
         margin-bottom: 56px;
         display: flex;
@@ -177,31 +180,26 @@
     .perks__textbox {
         padding: 0;
         margin: 0;
-        width: 327px;
         height: 86px;
-        .perks__title {
-            margin-top: 32px;
-        }
-        .perks__description {
-            text-align: center;
-        }
+    }
+    .perks__textbox .perks__title {
+        margin-top: 32px;
+    }
+    .perks__textbox .perks__description {
+        text-align: center;
     }
     .perks__image-background {
         margin-top: 56px;
     }
-    .pricing__textbox {
-        width: 327px;
-    }
     .pricing__card-dark {
-        width: 327px;
         height: 459px;
     }
     .pricing__card-light {
-        width: 327px;
         height: 448px;
     }
-    .pricing__card-div {
-        width: 327px;
+  
+    .pricing {
+        margin-top: 929px;
     }
     .footer-div {
         .contact-form {
