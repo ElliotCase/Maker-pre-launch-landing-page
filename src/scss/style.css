@@ -492,6 +492,7 @@ nav {
     width: 515px;
     height: 124px;
     display: flex;
+    display: -webkit-flex;
     margin-bottom: 40px;
   }
   .perks__card:nth-child(even) {
@@ -521,6 +522,7 @@ nav {
   }
   .pricing__card-div {
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
     margin-bottom: 75px;
     height: 1172px;
@@ -551,6 +553,7 @@ nav {
   }
   .logo {
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
   }
   .card__title br {
@@ -572,14 +575,14 @@ nav {
     position: absolute;
     width: 186px;
     height: 229.6px;
-    left: 0px;
+    left: -30px;
     top: -350px;
   }
   .illustration__image-right {
     position: absolute;
     width: 188.45px;
     height: 230.25px;
-    right: -50px;
+    right: -30px;
     top: -350px;
     overflow-x: hidden;
   }
@@ -604,6 +607,7 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
+    display: -webkit-flex;
   }
   .perks__card:nth-child(even) {
     margin: 0px;
