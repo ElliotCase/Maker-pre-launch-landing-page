@@ -52,6 +52,7 @@
         display: flex;
         display: -webkit-flex;
         margin-bottom: 40px;
+        flex: 0 1 auto;
     }
     .perks__card:nth-child(even) {
         margin-bottom: 40px;
@@ -172,6 +173,7 @@
         align-items: center;
         text-align: center;
         display: -webkit-flex;
+        flex: 0 1 auto;
     }
     .perks__card:nth-child(even) {
         margin: 0px;
