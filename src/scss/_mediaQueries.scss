@@ -96,6 +96,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden !important;
+    }
+
     nav {
         padding-top: 40px;
         padding-bottom: 421px;
@@ -127,9 +131,6 @@
     .container {
         width: 327px;
     }
-    body {
-        overflow-x: hidden !important;
-    }
 
     .illustration__image-left {
         position: absolute;
@@ -145,8 +146,9 @@
         height: 230.25px;
         right: -50px;
         top: -350px;
-        overflow: hidden;
+        overflow-x: hidden;
     }
+    .perks,
     .perks__box,
     .perks__card,
     .perks__textbox,
@@ -197,7 +199,7 @@
     .pricing__card-light {
         height: 448px;
     }
-  
+
     .pricing {
         margin-top: 929px;
     }
