@@ -28,9 +28,7 @@
             line-height: 25px;
         }
     }
-    * {
-        border: 1px solid #f00 !important;
-    }
+
     .card__image {
         left: 0px;
     }
@@ -94,17 +92,13 @@
     .pricing__card-dark {
         margin-bottom: 76px;
     }
-    .footer__image {
-    }
 }
 
 @media screen and (max-width: 768px) {
     body {
         overflow-x: hidden !important;
     }
-    * {
-        border: 1px solid #f00 !important;
-    }
+
     nav {
         padding-top: 40px;
         padding-bottom: 421px;
