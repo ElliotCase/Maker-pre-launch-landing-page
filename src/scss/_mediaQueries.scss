@@ -173,7 +173,9 @@
         align-items: center;
         text-align: center;
         display: -webkit-flex;
-        flex: 0 1 auto;
+        flex: 0 0 auto;
+        -webkit-flex: 0;
+        flex-shrink: 0;
     }
     .perks__card:nth-child(even) {
         margin: 0px;
