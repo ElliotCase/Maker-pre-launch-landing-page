@@ -28,6 +28,9 @@
             line-height: 25px;
         }
     }
+    * {
+        border: 1px solid #f00 !important;
+    }
     .card__image {
         left: 0px;
     }
@@ -41,6 +44,9 @@
     }
     .flex-column-tablet {
         flex-direction: column;
+    }
+    .perks {
+        width: 457px;
     }
     .perks__card {
         width: 515px;
@@ -89,9 +95,6 @@
         margin-bottom: 76px;
     }
     .footer__image {
-        width: 1664.13px;
-        height: 228px;
-        overflow-x: hidden;
     }
 }
 
@@ -99,7 +102,9 @@
     body {
         overflow-x: hidden !important;
     }
-
+    * {
+        border: 1px solid #f00 !important;
+    }
     nav {
         padding-top: 40px;
         padding-bottom: 421px;
@@ -202,6 +207,9 @@
 
     .pricing {
         margin-top: 929px;
+    }
+    .pricing__card-textbox {
+        width: unset;
     }
     .footer-div {
         .contact-form {

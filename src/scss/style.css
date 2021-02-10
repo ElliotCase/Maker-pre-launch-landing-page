@@ -2,6 +2,8 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 * {
@@ -11,6 +13,8 @@ html {
 }
 
 body {
+  max-width: 100%;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   font-family: "Manrope", sans-serif;
@@ -467,6 +471,9 @@ nav {
     font-size: 15px;
     line-height: 25px;
   }
+  * {
+    border: 1px solid #f00 !important;
+  }
   .card__image {
     left: 0px;
   }
@@ -480,6 +487,9 @@ nav {
   }
   .flex-column-tablet {
     flex-direction: column;
+  }
+  .perks {
+    width: 457px;
   }
   .perks__card {
     width: 515px;
@@ -526,16 +536,14 @@ nav {
   .pricing__card-dark {
     margin-bottom: 76px;
   }
-  .footer__image {
-    width: 1664.13px;
-    height: 228px;
-    overflow-x: hidden;
-  }
 }
 
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden !important;
+  }
+  * {
+    border: 1px solid #f00 !important;
   }
   nav {
     padding-top: 40px;
@@ -634,6 +642,9 @@ nav {
   }
   .pricing {
     margin-top: 929px;
+  }
+  .pricing__card-textbox, .pricing__card-textbox-dark {
+    width: unset;
   }
   .footer-div .contact-form {
     flex-direction: column;
